@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Lexend } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const lexend = Lexend({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +15,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className='h-screen flex flex-col bg-zinc-950 text-base text-zinc-100 antialiased scroll-smooth'>
+      <body className={`${lexend.className} flex flex-col flex-1`}>
+        <header>
+          navbar
+        </header>
+        <main className='flex-1'>
+          {children}
+        </main>
+        <footer>
+          footer
+        </footer>
+      </body>
     </html>
   )
 }
