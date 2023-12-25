@@ -27,7 +27,7 @@ export const Article = defineDocumentType(() => ({
       type: 'string',
       resolve: (article) => article._raw.flattenedPath
     }
-  }
+  },
 }))
 
 export default makeSource({
