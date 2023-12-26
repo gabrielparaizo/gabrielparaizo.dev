@@ -33,7 +33,7 @@ export default function Navbar() {
             </Link>
           ))}
         </nav>
-        <button type='button'>
+        <button type='button' className='p-2 rounded-lg border border-neutral-800 bg-neutral-900/60 hover:bg-neutral-900'>
           <Command size={24} className='text-neutral-100' />
         </button>
       </nav>
