@@ -4,9 +4,9 @@ import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 
 const navigation = [
-  { name: 'Email', href: '' },
-  { name: 'Linkedin', href: '' },
-  { name: 'GitHub', href: '' },
+  { name: 'Email', href: 'mailto:gabriellopees@hotmail.com' },
+  { name: 'Linkedin', href: 'https://www.linkedin.com/in/gabrielparaizo/' },
+  { name: 'GitHub', href: 'https://github.com/gabrielparaizo' },
 ]
 
 export default function Footer() {
