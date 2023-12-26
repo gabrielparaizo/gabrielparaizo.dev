@@ -14,9 +14,9 @@ export default function ArticlePreview(article: Article) {
           <Link href={article.url}>
             <h1 className='text-4xl font-semibold'>{article.title}</h1>
           </Link>
-          <p className='text-zinc-400'>{article.subtitle}</p>
+          <p className='text-neutral-400'>{article.subtitle}</p>
           <Link href={article.url}>
-            <button type="button" className='px-3 py-1 rounded-full border-zinc-600 bg-zinc-600/30 text-sm'>Read more</button>
+            <button type="button" className='px-3 py-1 rounded-full border-neutral-600 bg-neutral-600/30 text-sm'>Read more</button>
           </Link>
         </section>
       </article>

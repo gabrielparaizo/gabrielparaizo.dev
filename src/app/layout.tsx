@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Lexend } from 'next/font/google'
 import './globals.css'
+import Navbar from '@/components/Navbar/Navbar'
 
 const lexend = Lexend({ subsets: ['latin'] })
 
@@ -15,10 +16,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='h-screen flex flex-col bg-zinc-950 text-base text-zinc-100 antialiased scroll-smooth'>
+    <html lang="en" className='h-screen flex flex-col bg-neutral-950 text-base text-neutral-100 antialiased scroll-smooth'>
       <body className={`${lexend.className} flex flex-col flex-1`}>
         <header>
-          navbar
+          <nav>
+            <Navbar />
+          </nav>
         </header>
         <main className='flex-1'>
           {children}
