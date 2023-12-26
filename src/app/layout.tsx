@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Lexend } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar/Navbar'
+import Footer from '@/components/Footer/Footer'
 
 const lexend = Lexend({ subsets: ['latin'] })
 
@@ -27,7 +28,7 @@ export default function RootLayout({
           {children}
         </main>
         <footer>
-          footer
+          <Footer />
         </footer>
       </body>
     </html>
